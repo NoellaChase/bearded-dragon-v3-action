@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Breeding Bearded Dragons This Weekend - $27</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e8ed 50%, #c5e0dc 100%);
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .urgency-bar {
+            background: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2e7d8a 0%, #4a9d9c 50%, #5fb3a3 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(46, 125, 138, 0.3);
+        }
+        .hero .part1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero .part2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        .hero .part3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        .hero .proof-line {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 22px 50px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 20px rgba(39, 174, 96, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-button:hover { transform: scale(1.05); }
+        .micro-reassurance {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(46, 125, 138, 0.1);
+        }
+        .section h2 {
+            color: #2e7d8a;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #5fb3a3;
+            padding-bottom: 15px;
+        }
+        .section h3 {
+            color: #4a9d9c;
+            font-size: 1.3rem;
+            margin: 30px 0 15px;
+        }
+        .checklist-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 12px 0;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            border-left: 3px solid #27ae60;
+        }
+        .check-item input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            margin-right: 15px;
+            margin-top: 2px;
+            accent-color: #27ae60;
+        }
+        .check-item label {
+            flex: 1;
+            font-size: 1.05rem;
+        }
+        .week-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #27ae60;
+        }
+        .week-box h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .objection-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #2e7d8a;
+        }
+        .objection-box h4 {
+            color: #2e7d8a;
+            margin-bottom: 10px;
+        }
+        .future-scene {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #2196f3;
+            font-style: italic;
+        }
+        .testimonial {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #5fb3a3;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #ffc107;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        .step {
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+            padding: 15px;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #2e7d8a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 0 auto 15px;
+        }
+        .guarantee-box {
+            background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            border: 2px solid #4db6ac;
+        }
+        .price-box {
+            background: #e74c3c;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .price-box .big {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .timer-box {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .footer-cta {
+            background: linear-gradient(135deg, #2e7d8a 0%, #4a9d9c 50%, #5fb3a3 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        .strike { text-decoration: line-through; opacity: 0.7; }
+        .bold-statement {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2e7d8a;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="urgency-bar">
+            ⏰ Launch Price Ends Soon — Only 27 Spots Left at $27
+        </div>
+
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div class="part1">Stop Planning. Start Doing.</div>
+            <div class="part2">A complete weekend action plan that takes you from "interested" to "first dragon purchased" in 48 hours.</div>
+            <div class="part3">By Sunday night, you'll have everything ordered and your first seller contacted.</div>
+            <div class="proof-line">No experience needed. No expensive equipment. Just follow the checklist.</div>
+            <a href="#buy" class="cta-button">Get The Weekend Plan — $27</a>
+            <div class="micro-reassurance">Instant download • 30-day guarantee • Start in 48 hours</div>
+        </div>
+
+        <!-- EXTERNAL PROOF LAYER -->
+        <div class="section">
+            <h2>People Who Started This Weekend</h2>
+            
+            <div class="testimonial">
+                <p><strong>"I bought the guide Saturday morning. By Sunday at 3pm, I'd ordered my supplies and found a breeder 20 minutes away. My dragons were in their tank by Wednesday."</strong></p>
+                <p style="margin-top: 10px; color: #2e7d8a;">— Jennifer M., Texas • Started same weekend</p>
+            </div>
+
+            <div class="testimonial">
+                <p><strong>"I was the kind of person who researches forever and never acts. This gave me permission to just START. Best $27 I ever spent."</strong></p>
+                <p style="margin-top: 10px; color: #2e7d8a;">— Marcus T., Florida • Chronic over-thinker</p>
+            </div>
+
+            <div class="highlight-box">
+                <strong>The Weekend Action Plan includes:</strong>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li>Exact Amazon cart ($47 total) — copy & paste</li>
+                    <li>Facebook/Craigslist search templates</li>
+                    <li>Seller message scripts that get responses</li>
+                    <li>Red flags to avoid when buying</li>
+                    <li>Tank setup video (30 minutes)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SPECIFIC OUTCOME ANCHORING -->
+        <div class="section">
+            <h2>What "This Weekend" Actually Looks Like</h2>
+            
+            <div class="bold-statement">Saturday 9am: You download the guide.<br>Sunday 6pm: You've ordered supplies and contacted sellers.</div>
+
+            <div class="week-box">
+                <h3>🗓️ Saturday Morning (2 hours)</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="s1">
+                    <label for="s1">Read the Quick-Start Guide (45 min)</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s2">
+                    <label for="s2">Watch "Tank Setup in 30 Minutes" video</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s3">
+                    <label for="s3">Copy the Amazon shopping list and checkout ($47)</label>
+                </div>
+            </div>
+
+            <div class="week-box">
+                <h3>🗓️ Saturday Afternoon (1 hour)</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="s4">
+                    <label for="s4">Search Craigslist for "bearded dragon" in your area</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s5">
+                    <label for="s5">Join 3 local Facebook reptile groups</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s6">
+                    <label for="s6">Send 5 messages using our copy-paste templates</label>
+                </div>
+            </div>
+
+            <div class="week-box">
+                <h3>🗓️ Sunday (2 hours)</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="s7">
+                    <label for="s7">Review seller responses and pick the best option</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s8">
+                    <label for="s8">Schedule pickup using our meeting safety checklist</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="s9">
+                    <label for="s9">Post in our private community: "Starting my journey!"</label>
+                </div>
+            </div>
+
+            <div class="future-scene">
+                <strong>Future Scene #1:</strong> Sunday night. You're on the couch. Your supplies are ordered (arriving Tuesday). You have three seller conversations going. For the first time in months, you feel momentum. You didn't just think about it. You started.
+            </div>
+
+            <div class="future-scene">
+                <strong>Future Scene #2:</strong> Wednesday evening. Your tank is set up. Your dragon is exploring. You take a photo and send it to your partner/friend with the caption: "I did it." They don't understand why this matters. But you do.
+            </div>
+        </div>
+
+        <!-- OBJECTION DOMINATION -->
+        <div class="section">
+            <h2>Every Excuse. Eliminated.</h2>
+
+            <div class="objection-box">
+                <h4>"I don't have time this weekend"</h4>
+                <p>The entire plan requires 5 hours total. That's Saturday morning + Sunday afternoon. You spend more time watching Netflix. This weekend, build something instead.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I can't find dragons locally?"</h4>
+                <p>The guide includes 5 sourcing strategies. Reptile expos (monthly in most cities), breeders who ship, rescue groups, Facebook groups, and Craigslist. One will work for you.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"I don't know what to buy"</h4>
+                <p>Copy-paste Amazon cart. Exact products. Exact quantities. $47 total. No decisions. No research. Just checkout.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I message sellers and they don't respond?"</h4>
+                <p>Our message templates have a 73% response rate. They work because they're specific, serious, and signal you're a real buyer. Copy. Paste. Send.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I buy the wrong dragon?"</h4>
+                <p>The guide includes a "Red Flags Checklist" — health issues to spot, questions to ask, age to target. You'll know a good deal from a bad one in 5 minutes.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I set up the tank wrong?"</h4>
+                <p>30-minute video. Watch it once. Pause and follow along. Exact temperatures. Exact light placement. Exact substrate. Can't mess it up.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if my family/partner thinks I'm crazy?"</h4>
+                <p>Show them the financial breakdown. $200 investment. $3,000 potential return. Ask them to name another weekend project with 1,500% ROI potential.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I start and then lose interest?"</h4>
+                <p>Dragons need 15 minutes of care per day. If you can't commit to that, fair enough. But if you can, this becomes a 5-hour-per-week business that runs itself.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if this is a scam?"</h4>
+                <p>30-day money-back guarantee. Download it. Try the weekend plan. If you don't make progress, email for a refund. Your risk: $0.</p>
+            </div>
+
+            <div class="objection-box">
+                <h4>"What if I wait until next weekend?"</h4>
+                <p>You won't. Next weekend becomes next month. Next month becomes next year. The people who succeed start NOW. While the idea is hot. While the motivation is here.</p>
+            </div>
+        </div>
+
+        <!-- IDENTITY TRANSFORMATION -->
+        <div class="section">
+            <h2>Who You Become</h2>
+            
+            <p>This isn't just about dragons. It's about <strong>becoming someone who executes</strong>.</p>
+
+            <div class="bold-statement">You become a Starter. Not a planner. Not a researcher. Someone who sees an opportunity and takes it.</div>
+
+            <p>Most people will read this page and do nothing. They'll bookmark it. They'll "think about it." They'll wait for the perfect time.</p>
+
+            <p>You're not most people.</p>
+
+            <p>By Sunday night, you'll be different. You'll have momentum. You'll have proof that you can start things. That you can make decisions. That you can build.</p>
+
+            <p>That's the real value. Not just the business. <strong>The identity shift from thinker to doer.</strong></p>
+        </div>
+
+        <!-- DIFFERENTIATION -->
+        <div class="section">
+            <h2>This Is NOT</h2>
+            
+            <div class="highlight-box">
+                <p><strong>❌ Another "someday" course</strong> — This is designed for THIS weekend. Specific actions. Specific timelines. No "whenever you get around to it."</p>
+                
+                <p><strong>❌ Vague advice</strong> — Exact Amazon links. Exact message templates. Exact checklists. Nothing left to figure out.</p>
+                
+                <p><strong>❌ A long-term commitment</strong> — 5 hours this weekend. Then 15 minutes a day. That's it. No 6-month programs. No ongoing fees.</p>
+                
+                <p><strong>❌ Theoretical</strong> — Every step has been tested by 70+ first-time breeders. This works. If you work it.</p>
+            </div>
+        </div>
+
+        <!-- 30-60-90 DAY MILESTONES -->
+        <div class="section">
+            <h2>What Happens After This Weekend</h2>
+            
+            <div class="week-box">
+                <h3>📅 Day 30: Foundation Locked In</h3>
+                <p>✓ Dragons purchased and acclimated<br>
+                ✓ Daily care routine on autopilot<br>
+                ✓ First vet check complete<br>
+                ✓ Instagram/TikTok started (optional)<br>
+                ✓ Joined breeder community</p>
+            </div>
+
+            <div class="week-box">
+                <h3>📅 Day 60: Breeding Mode Activated</h3>
+                <p>✓ Brumation cycle understood<br>
+                ✓ Incubation supplies ready<br>
+                ✓ Local buyer network growing<br>
+                ✓ First mating observed<br>
+                ✓ Eggs expected within 30 days</p>
+            </div>
+
+            <div class="week-box">
+                <h3>📅 Day 90: First Revenue</h3>
+                <p>✓ Eggs laid and incubating<br>
+                ✓ Babies hatched and thriving<br>
+                ✓ First Facebook Marketplace post live<br>
+                ✓ First message: "Is this still available?"<br>
+                ✓ First $100 deposited</p>
+            </div>
+        </div>
+
+        <!-- VALUE STACK -->
+        <div class="section">
+            <h2>Your Weekend Action Kit</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p><strong>PDF Guide</strong><br>Download instantly</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p><strong>Videos</strong><br>Stream anytime</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p><strong>Templates</strong><br>Copy & paste ready</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p><strong>Community</strong><br>Get help fast</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>📋 The Complete Weekend Plan</h3>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                    <li>Hour-by-hour Saturday schedule</li>
+                    <li>Hour-by-hour Sunday schedule</li>
+                    <li>Copy-paste Amazon shopping cart ($47)</li>
+                    <li>Seller message templates (5 variations)</li>
+                    <li>Red flags checklist (avoid bad deals)</li>
+                    <li>Tank setup video (30 min)</li>
+                    <li>Meeting safety guide</li>
+                    <li>First-week care checklist</li>
+                </ul>
+            </div>
+
+            <div class="timer-box">
+                <h3 style="color: #e65100; margin-bottom: 10px;">⚠️ Price Increases When We Hit 100 Customers</h3>
+                <p><strong>Current count: 73</strong></p>
+                <p style="margin-top: 10px;">27 spots left at $27</p>
+            </div>
+
+            <div class="price-box">
+                <p>Get Started This Weekend For Just</p>
+                <div class="big">$27</div>
+                <p style="margin-top: 10px;"><span class="strike">$97</span> regular price</p>
+            </div>
+        </div>
+
+        <!-- GUARANTEE -->
+        <div class="guarantee-box">
+            <h3 style="color: #00695c; font-size: 1.5rem; margin-bottom: 15px;">🛡️ 30-Day Action-Taker Guarantee</h3>
+            <p>Download the guide. Follow the weekend plan. Order your supplies.</p>
+            <p>If you don't make meaningful progress within 30 days, email for a full refund.</p>
+            <p style="margin-top: 15px; font-weight: bold;">No questions. No hassle. No risk.</p>
+        </div>
+
+        <!-- FINAL CTA -->
+        <div class="footer-cta" id="buy">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">This Weekend or Never.</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.95;">You can start now or you can keep thinking about it. One leads to results. The other leads to regret.</p>
+            <a href="#" class="cta-button" style="font-size: 1.5rem; padding: 25px 60px;">Get The Weekend Plan — $27</a>
+            <p style="margin-top: 25px; opacity: 0.9;">Join 73 people who chose action over hesitation.</p>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">Instant download • 30-day guarantee • Start in 48 hours</p>
+        </div>
+
+        <!-- P.S. -->
+        <div class="section" style="text-align: center;">
+            <p style="font-size: 1.1rem;"><strong>P.S.</strong> Next weekend you'll either have started your dragon business or you won't. The only difference is what you do in the next 5 minutes.</p>
+        </div>
+    </div>
+</body>
+</html>
